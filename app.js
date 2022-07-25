@@ -110,12 +110,12 @@ app.post("/login", (req, res) => {
 
 
 // access the API free with the free-endpoint and no authentication
-app.get("/free-endpoint", (req, res) => {
+app.get("/free-route", (req, res) => {
   res.json({message: "You have a free acess anytime."});
 });
 
 // only authenticated user can have access to the API with the auth-endpoint 
-app.get("/auth-endpoint", auth, (req, res) => {
+app.get("/auth-route", auth, (req, res) => {
   res.json({message: "You can have access when you are authorised."});
 });
 
