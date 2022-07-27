@@ -51,12 +51,12 @@ app.post("/register", (req, res) => {
           .send({
            message: "User created successfully",
            result,
+          })
          }).catch((err) => {
            res.status(500).send({
              message: "Error creating User",
              err,
-           });
-         });
+        });
      });
   }).catch((err) => {
     res.status(500).send({
