@@ -12,3 +12,6 @@
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 - [mongodb](https://www.npmjs.com/package/mongodb)
 
+## API testing 
+
+- Postman
